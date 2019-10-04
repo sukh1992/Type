@@ -1,0 +1,113 @@
+/* Type */
+
+body {
+	background-color: pink;
+	color: yellow;
+	font-family: sans-serif;
+	line-height: 0;
+    font-size: 5em;
+}
+
+.letter-1 {
+			font-size: 4em;
+			text-align: center;
+			position: absolute;
+			top: 678px;
+			left: 500px;
+			color: blue;
+}
+
+.word-1 {
+			font-size: 86px;
+			position: absolute;
+			top: 673px;
+			transform: rotate(90deg);
+			left: 650px;
+			text-transform: uppercase;
+			color: blue;
+}
+
+.letter-2 {
+			font-size: 4em;
+			position: absolute;
+			top: 639px;
+			left: 96px;
+}
+
+.word-2 {
+			font-size: 82px;
+			position: absolute;
+			top: 490px;
+			left: 118px;
+			text-transform: uppercase;
+}
+
+.word-3 {
+			font-size: 122px;
+			color: red;
+			position: absolute;
+			top: 174px;
+			left: 450px;
+			text-shadow: 11px 1px black;
+    		
+}
+
+.word-4 {
+			font-size: 130px;
+			color: green;
+			position: absolute;
+			top: 404px;
+			left: 380px;
+			filter: blur(30px);
+
+}
+
+.word-5 {
+			font-size: 100px;
+			color: green;
+			position: absolute;
+			top: 416px;
+			left: 403px;
+			
+
+}
+
+.flip-box {
+  			background-color: transparent;
+  			width: 300px;
+			height: 200px;
+			border: 1px solid #f1f1f1;
+			perspective: 1000px;
+  }
+
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 58px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  }
+
+  .flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
